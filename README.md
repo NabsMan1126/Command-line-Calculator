@@ -1,48 +1,23 @@
-# Command-line-Calculator
-A simple Python CLI calculator for basic arithmetic operations.
-def add(a, b):
-    return a + b
+# Command-Line Calculator
 
-def subtract(a, b):
-    return a - b
+This is a simple Python-based command-line calculator that performs basic arithmetic operations.
 
-def multiply(a, b):
-    return a * b
+## 📌 Description
+The program allows users to input two numbers and an operator to perform calculations directly in the terminal.
 
-def divide(a, b):
-    if b == 0:
-        return "Error: Cannot divide by zero"
-    return a / b
+## ⚙️ Features
+- Addition (+)
+- Subtraction (-)
+- Multiplication (*)
+- Division (/)
+- Handles invalid input
+- Prevents division by zero
 
+## ▶️ How to Run
 
-def main():
-    print("Simple Command-Line Calculator")
-    print("Operations: +, -, *, /")
+1. Make sure Python is installed
+2. Download or clone this repository
+3. Run the program:
 
-    while True:
-        try:
-            num1 = float(input("Enter first number: "))
-            operator = input("Enter operator: ")
-            num2 = float(input("Enter second number: "))
-
-            if operator == "+":
-                print("Result:", add(num1, num2))
-            elif operator == "-":
-                print("Result:", subtract(num1, num2))
-            elif operator == "*":
-                print("Result:", multiply(num1, num2))
-            elif operator == "/":
-                print("Result:", divide(num1, num2))
-            else:
-                print("Invalid operator")
-
-        except ValueError:
-            print("Invalid input. Please enter numbers only.")
-
-        again = input("Do another calculation? (y/n): ").lower()
-        if again != "y":
-            break
-
-
-if __name__ == "__main__":
-    main()
+```bash
+python calculator.py
